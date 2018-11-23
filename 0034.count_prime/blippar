@@ -1,0 +1,61 @@
+package main
+
+import (
+  "fmt"
+  "strconv"
+)
+
+var tc = []string{
+    "ECC",
+  "SSS",
+  "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW",
+    "wwwwaaadexxxxxx",
+}
+
+// AAAABBC => A4B2C
+
+func rle(word string) string {
+  
+  if word == "" {
+    return ""
+  }
+  
+  count := 1
+  var result string
+
+  
+  i := 1
+  for  i = 1; i < len(word); i++ {
+
+    if word[i - 1] == word[i] {
+      count++
+    }
+    
+    if word[i - 1] != word[i] {
+      if count == 1 {
+        result += string(word[i-1])
+      } else {
+        result +=string(word[i-1]) + strconv.Itoa(count)
+      }
+      count = 1
+    }
+    
+  }
+  
+  result +=string(word[i-1]) + strconv.Itoa(count)
+
+  
+  return result
+}
+
+
+func main() {
+  
+  for _, t := range tc {
+    fmt.Printf("Input: %s, output: %s\n", t, rle(t))
+    
+  }
+}
+
+
+
