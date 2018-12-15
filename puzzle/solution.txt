@@ -1,0 +1,29 @@
+useage example in command-line:
+./puzzle "xeecaxdcagdhbbfibbfj"
+
+Board representation:
+- Board represented by string of letters
+- "x" represents empty space
+- Order of characters is left to right, top to bottom
+- Board representation example >> "xeecaxdcagdhbbfibbfj"
+XXXXXX
+X eecX
+Xa dcX
+XagdhX
+XbbfiX
+XbbfjX
+XX  XX
+
+The program outputs optimal solution and number of boards tested
+
+Optimal solution guideline:
+- Each move is represented by 2 letters:
+  - First letter is the piece to be moved. If first letter is uppercase, that means move the piece 2 spaces in the specified direction
+  - Second letter is the direction of movement (U: up, D: down, L: left, R: right)
+- Example >> "aUgLdLfUbRbD":
+  - Move a Up
+  - Move g Left
+  - Move d Left
+  - Move f Up
+  - Move b Right
+  - Move b Down

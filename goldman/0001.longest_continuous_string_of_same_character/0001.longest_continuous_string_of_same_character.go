@@ -1,0 +1,5 @@
+package goldman
+
+func main() {
+
+}
