@@ -5,7 +5,7 @@ Examples:
 
 s = "leetcode"
 return 0.
-return char = 1
+return char = l
 
 s = "loveleetcode",
 return 2.

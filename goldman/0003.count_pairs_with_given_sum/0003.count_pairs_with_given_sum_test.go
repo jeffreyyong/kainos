@@ -29,7 +29,7 @@ func TestCountPairsWithSum(t *testing.T) {
 			6,
 		},
 		{
-			"example 3",
+			"example 4",
 			11,
 			[]int{10, 12, 10, 15, -1, 7, 6,
 				5, 4, 2, 1, 1, 1},

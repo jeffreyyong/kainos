@@ -53,7 +53,7 @@ If (left and right parentheses are exhausted) {
   Join the solution set and return
 }
 //Otherwise start experimenting with various options
-If (and left parenthesis can be used) {
+If (left parenthesis left to be used) {
   Add a left parenthesis and continue recursion
 }
 If (the right parenthesis can be used, and the right parenthesis is smaller than the left parenthesis) {
